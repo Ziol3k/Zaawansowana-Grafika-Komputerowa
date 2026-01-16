@@ -1,0 +1,11 @@
+# ninja log v7
+4	2082	7902145217178032	CMakeFiles/minigolf.dir/src/main.cpp.obj	68b472b2020cd4ae
+2084	2263	7902145237970190	minigolf.exe	c7e8ce90ae4454a
+26	2114	7902156745544173	CMakeFiles/minigolf.dir/src/main.cpp.obj	68b472b2020cd4ae
+2114	2246	7902156766422070	minigolf.exe	c7e8ce90ae4454a
+31	2770	7902239573287375	CMakeFiles/minigolf.dir/src/main.cpp.obj	68b472b2020cd4ae
+2770	2999	7902239600678125	minigolf.exe	c7e8ce90ae4454a
+28	2133	7902252004489687	CMakeFiles/minigolf.dir/src/main.cpp.obj	68b472b2020cd4ae
+2133	2279	7902252025542598	minigolf.exe	c7e8ce90ae4454a
+26	2095	7902256683215402	CMakeFiles/minigolf.dir/src/main.cpp.obj	68b472b2020cd4ae
+2095	2240	7902256703902949	minigolf.exe	c7e8ce90ae4454a
