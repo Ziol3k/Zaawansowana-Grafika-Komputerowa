@@ -5,12 +5,10 @@
 using namespace cv;
 using namespace std;
 
-// clamp pomocniczy
 inline int clampi(int v, int lo, int hi) {
-    return max(lo, min(v, hi));
+    return max(lo, min(v, hi)); 
 }
 
-// rysowanie półprzezroczystego koła (lokalnie!)
 void drawCircleAlpha(
     Mat &canvas,
     Point center,
@@ -39,25 +37,22 @@ void drawCircleAlpha(
 
 int main(int argc, char **argv) {
     if (argc < 3) {
-        cout << "Usage: mosaic input.jpg output.png\n";
+        cout << "Usage: mosaic input output\n";
         return 0;
     }
 
-    // ===== PARAMETRY (łatwe do opisu w projekcie) =====
-    const int ITERATIONS = 200000;   // ilość prób (zwiększ dla lepszej jakości)
-    const int MIN_R = 2;            // minimalny promień koła
-    const int MAX_R = 15;           // maksymalny promień
-    const float BASE_ALPHA = 0.35f; // bazowa przezroczystość
-    const float EDGE_BOOST = 0.65f; // wzmocnienie na krawędziach
+    const int ITERATIONS = 200000;
+    const int MIN_R = 2;
+    const int MAX_R = 15;
+    const float BASE_ALPHA = 0.35f;
+    const float EDGE_BOOST = 0.65f;
 
-    // ===== Wczytanie obrazu =====
     Mat img = imread(argv[1]);
     if (img.empty()) {
         cerr << "Nie mozna wczytac obrazu\n";
         return 1;
     }
 
-    // ===== Sobel =====
     Mat gray, gx, gy, grad;
     cvtColor(img, gray, COLOR_BGR2GRAY);
     Sobel(gray, gx, CV_32F, 1, 0, 3);
@@ -65,16 +60,13 @@ int main(int argc, char **argv) {
     magnitude(gx, gy, grad);
     normalize(grad, grad, 0.0f, 1.0f, NORM_MINMAX);
 
-    // ===== Płótno (float, bo alpha blending) =====
     Mat canvas(img.rows, img.cols, CV_32FC3, Scalar(1,1,1));
 
-    // ===== RNG =====
     std::mt19937 rng(1337);
     std::uniform_int_distribution<int> rx(0, img.cols - 1);
     std::uniform_int_distribution<int> ry(0, img.rows - 1);
     std::uniform_real_distribution<float> rf(0.0f, 1.0f);
 
-    // ===== GŁÓWNA PĘTLA =====
     for (int i = 0; i < ITERATIONS; i++) {
 
         int x = rx(rng);
@@ -82,14 +74,11 @@ int main(int argc, char **argv) {
 
         float g = grad.at<float>(y, x);
 
-        // probabilistyczne odrzucenie (nieregularność!)
         if (rf(rng) > g * EDGE_BOOST + 0.15f)
             continue;
 
-        // rozmiar koła sterowany Sobelem
         int radius = int(MAX_R * (1.0f - g) + MIN_R * g);
 
-        // obszar próbkowania koloru
         int x0 = clampi(x - radius, 0, img.cols - 1);
         int y0 = clampi(y - radius, 0, img.rows - 1);
         int x1 = clampi(x + radius, 0, img.cols - 1);
@@ -99,13 +88,11 @@ int main(int argc, char **argv) {
         Scalar m = mean(img(sample));
         Vec3f color(m[0]/255.0f, m[1]/255.0f, m[2]/255.0f);
 
-        // alpha zależna od gradientu
         float alpha = BASE_ALPHA + g * 0.4f;
 
         drawCircleAlpha(canvas, Point(x,y), radius, color, alpha);
     }
 
-    // ===== Zapis =====
     Mat out;
     canvas.convertTo(out, CV_8UC3, 255.0);
     imwrite(argv[2], out);

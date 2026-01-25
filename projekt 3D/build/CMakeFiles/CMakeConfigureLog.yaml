@@ -4,18 +4,18 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Windows - 10.0.26100 - AMD64
+      The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Program used to build from build.ninja files."
+    description: "Path to a program."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -25,11 +25,9 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ninja-build"
-      - "ninja"
-      - "samu"
+      - "mingw32-make.exe"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -39,15 +37,16 @@ events:
       - "C:/msys64/usr/bin/site_perl/"
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/ninja-build.com"
-      - "C:/msys64/mingw64/bin/ninja-build.exe"
-      - "C:/msys64/mingw64/bin/ninja-build"
-      - "C:/msys64/mingw64/bin/ninja.com"
-    found: "C:/msys64/mingw64/bin/ninja.exe"
+      - "C:/msys64/ucrt64/bin/mingw32-make.exe.com"
+    found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -61,8 +60,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER"
@@ -83,7 +82,7 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -94,11 +93,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/c++.com"
-    found: "C:/msys64/mingw64/bin/c++.exe"
+      - "C:/msys64/ucrt64/bin/c++.com"
+    found: "C:/msys64/ucrt64/bin/c++.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -112,11 +111,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -132,11 +131,11 @@ events:
     names:
       - "CMakeCXXCompilerId.cpp.in"
     candidate_directories:
-      - "C:/msys64/mingw64/share/cmake/Modules/"
-    found: "C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -150,13 +149,13 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/msys64/mingw64/bin/c++.exe 
+      Compiler: C:/msys64/ucrt64/bin/c++.exe 
       Build flags: 
       Id flags:  
       
@@ -167,13 +166,13 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        D:/Studia/Zaawansowana Grafika komputerowa/projekt 3D/build/CMakeFiles/4.2.1/CompilerIdCXX/a.exe
+        D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/4.2.1/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -189,7 +188,7 @@ events:
     names:
       - "ar"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -200,11 +199,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/ar.com"
-    found: "C:/msys64/mingw64/bin/ar.exe"
+      - "C:/msys64/ucrt64/bin/ar.com"
+    found: "C:/msys64/ucrt64/bin/ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -218,8 +217,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -235,7 +234,7 @@ events:
     names:
       - "ranlib"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -246,11 +245,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/ranlib.com"
-    found: "C:/msys64/mingw64/bin/ranlib.exe"
+      - "C:/msys64/ucrt64/bin/ranlib.com"
+    found: "C:/msys64/ucrt64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -264,8 +263,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -281,7 +280,7 @@ events:
     names:
       - "strip"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -292,11 +291,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/strip.com"
-    found: "C:/msys64/mingw64/bin/strip.exe"
+      - "C:/msys64/ucrt64/bin/strip.com"
+    found: "C:/msys64/ucrt64/bin/strip.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -310,8 +309,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -327,7 +326,7 @@ events:
     names:
       - "ld"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -338,11 +337,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/ld.com"
-    found: "C:/msys64/mingw64/bin/ld.exe"
+      - "C:/msys64/ucrt64/bin/ld.com"
+    found: "C:/msys64/ucrt64/bin/ld.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -356,8 +355,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -373,7 +372,7 @@ events:
     names:
       - "nm"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -384,11 +383,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/nm.com"
-    found: "C:/msys64/mingw64/bin/nm.exe"
+      - "C:/msys64/ucrt64/bin/nm.com"
+    found: "C:/msys64/ucrt64/bin/nm.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -402,8 +401,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -419,7 +418,7 @@ events:
     names:
       - "objdump"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -430,11 +429,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/objdump.com"
-    found: "C:/msys64/mingw64/bin/objdump.exe"
+      - "C:/msys64/ucrt64/bin/objdump.com"
+    found: "C:/msys64/ucrt64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -448,8 +447,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -465,7 +464,7 @@ events:
     names:
       - "objcopy"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -476,11 +475,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/objcopy.com"
-    found: "C:/msys64/mingw64/bin/objcopy.exe"
+      - "C:/msys64/ucrt64/bin/objcopy.com"
+    found: "C:/msys64/ucrt64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -494,8 +493,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -511,7 +510,7 @@ events:
     names:
       - "readelf"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -522,11 +521,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/readelf.com"
-    found: "C:/msys64/mingw64/bin/readelf.exe"
+      - "C:/msys64/ucrt64/bin/readelf.com"
+    found: "C:/msys64/ucrt64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -540,8 +539,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -557,7 +556,7 @@ events:
     names:
       - "dlltool"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -568,11 +567,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/dlltool.com"
-    found: "C:/msys64/mingw64/bin/dlltool.exe"
+      - "C:/msys64/ucrt64/bin/dlltool.com"
+    found: "C:/msys64/ucrt64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -586,8 +585,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -603,7 +602,7 @@ events:
     names:
       - "addr2line"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -614,11 +613,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/addr2line.com"
-    found: "C:/msys64/mingw64/bin/addr2line.exe"
+      - "C:/msys64/ucrt64/bin/addr2line.com"
+    found: "C:/msys64/ucrt64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -632,8 +631,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -649,7 +648,7 @@ events:
     names:
       - "tapi"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -660,9 +659,9 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/tapi.com"
-      - "C:/msys64/mingw64/bin/tapi.exe"
-      - "C:/msys64/mingw64/bin/tapi"
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
       - "C:/msys64/usr/local/bin/tapi.com"
       - "C:/msys64/usr/local/bin/tapi.exe"
       - "C:/msys64/usr/local/bin/tapi"
@@ -693,7 +692,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -707,8 +706,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
@@ -727,7 +726,7 @@ events:
       - "gcc-ar15"
       - "gcc-ar"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -738,9 +737,9 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/gcc-ar-15.2.com"
-      - "C:/msys64/mingw64/bin/gcc-ar-15.2.exe"
-      - "C:/msys64/mingw64/bin/gcc-ar-15.2"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2"
       - "C:/msys64/usr/local/bin/gcc-ar-15.2.com"
       - "C:/msys64/usr/local/bin/gcc-ar-15.2.exe"
       - "C:/msys64/usr/local/bin/gcc-ar-15.2"
@@ -768,9 +767,9 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2"
-      - "C:/msys64/mingw64/bin/gcc-ar-15.com"
-      - "C:/msys64/mingw64/bin/gcc-ar-15.exe"
-      - "C:/msys64/mingw64/bin/gcc-ar-15"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15"
       - "C:/msys64/usr/local/bin/gcc-ar-15.com"
       - "C:/msys64/usr/local/bin/gcc-ar-15.exe"
       - "C:/msys64/usr/local/bin/gcc-ar-15"
@@ -798,9 +797,9 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ar-15"
-      - "C:/msys64/mingw64/bin/gcc-ar15.com"
-      - "C:/msys64/mingw64/bin/gcc-ar15.exe"
-      - "C:/msys64/mingw64/bin/gcc-ar15"
+      - "C:/msys64/ucrt64/bin/gcc-ar15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar15"
       - "C:/msys64/usr/local/bin/gcc-ar15.com"
       - "C:/msys64/usr/local/bin/gcc-ar15.exe"
       - "C:/msys64/usr/local/bin/gcc-ar15"
@@ -828,11 +827,11 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ar15.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ar15.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ar15"
-      - "C:/msys64/mingw64/bin/gcc-ar.com"
-    found: "C:/msys64/mingw64/bin/gcc-ar.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -846,8 +845,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
@@ -866,7 +865,7 @@ events:
       - "gcc-ranlib15"
       - "gcc-ranlib"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -877,9 +876,9 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.com"
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.exe"
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15.2"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.exe"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15.2"
@@ -907,9 +906,9 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2"
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15.com"
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15.exe"
-      - "C:/msys64/mingw64/bin/gcc-ranlib-15"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15.com"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15.exe"
       - "C:/msys64/usr/local/bin/gcc-ranlib-15"
@@ -937,9 +936,9 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15"
-      - "C:/msys64/mingw64/bin/gcc-ranlib15.com"
-      - "C:/msys64/mingw64/bin/gcc-ranlib15.exe"
-      - "C:/msys64/mingw64/bin/gcc-ranlib15"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15"
       - "C:/msys64/usr/local/bin/gcc-ranlib15.com"
       - "C:/msys64/usr/local/bin/gcc-ranlib15.exe"
       - "C:/msys64/usr/local/bin/gcc-ranlib15"
@@ -967,11 +966,11 @@ events:
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.com"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.exe"
       - "C:/msys64/usr/bin/core_perl/gcc-ranlib15"
-      - "C:/msys64/mingw64/bin/gcc-ranlib.com"
-    found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -985,10 +984,10 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
-      - "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake:169 (enable_language)"
-      - "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake:169 (enable_language)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
@@ -1005,7 +1004,7 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
       - "C:/Windows/System32/"
@@ -1015,9 +1014,9 @@ events:
       - "C:/msys64/usr/bin/site_perl/"
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/bin/"
-      - "C:/msys64/mingw64/sbin/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/sbin/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1028,11 +1027,11 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/sbin/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/windres.com"
-    found: "C:/msys64/mingw64/bin/windres.exe"
+      - "C:/msys64/ucrt64/bin/windres.com"
+    found: "C:/msys64/ucrt64/bin/windres.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1045,22 +1044,22 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Studia/Zaawansowana Grafika komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-dmnck8"
-      binary: "D:/Studia/Zaawansowana Grafika komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-dmnck8"
+      source: "D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n"
+      binary: "D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1070,179 +1069,191 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Studia/Zaawansowana Grafika komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-dmnck8'
+        Change Dir: 'D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n'
         
-        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_a7648
-        [1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_850ad/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_850ad.dir\\build.make CMakeFiles/cmTC_850ad.dir/build
+        mingw32-make[1]: Entering directory 'D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n'
+        Building CXX object CMakeFiles/cmTC_850ad.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
-        Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --with-native-system-header-dir=/ucrt64/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a7648.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccdTIXQ3.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_850ad.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccNxRfHU.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
-        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"
-        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"
-        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"
-        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
-        ignoring nonexistent directory "D:/M/msys64/mingw64/include"
-        ignoring nonexistent directory "/mingw64/include"
-        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
-        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "D:/M/msys64/mingw64/include"
+        ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+        ignoring nonexistent directory "D:/M/msys64/ucrt64/include"
+        ignoring nonexistent directory "/ucrt64/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "D:/M/msys64/ucrt64/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
-        Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccdTIXQ3.s
+        Compiler executable checksum: 3a1a95c83f0136a64748ec8c5a2a87f3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccNxRfHU.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
-        COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a7648.exe -Wl,--out-implib,libcmTC_a7648.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_850ad.exe
+        C:\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_850ad.dir\\link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
-        COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
-        Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --with-native-system-header-dir=/ucrt64/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a7648.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a7648.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccvsMsk8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a7648.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a7648.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_850ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_850ad.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccNlCwHk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_850ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_850ad.dir/objects.a --no-whole-archive --out-implib libcmTC_850ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccvsMsk8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a7648.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a7648.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccNlCwHk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_850ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_850ad.dir/objects.a --no-whole-archive --out-implib libcmTC_850ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a7648.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a7648.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_850ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_850ad.'
+        C:\\msys64\\ucrt64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_850ad.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_850ad.dir/objects.a @CMakeFiles\\cmTC_850ad.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_850ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_850ad.exe -Wl,--out-implib,libcmTC_850ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
-          add: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         end of search list found
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0] ==> [C:/msys64/mingw64/include/c++/15.2.0]
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32] ==> [C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32]
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward] ==> [C:/msys64/mingw64/include/c++/15.2.0/backward]
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include]
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include] ==> [C:/msys64/mingw64/include]
-        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
-        implicit include dirs: [C:/msys64/mingw64/include/c++/15.2.0;C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32;C:/msys64/mingw64/include/c++/15.2.0/backward;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;C:/msys64/mingw64/include;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0] ==> [C:/msys64/ucrt64/include/c++/15.2.0]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward] ==> [C:/msys64/ucrt64/include/c++/15.2.0/backward]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include] ==> [C:/msys64/ucrt64/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        implicit include dirs: [C:/msys64/ucrt64/include/c++/15.2.0;C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32;C:/msys64/ucrt64/include/c++/15.2.0/backward;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;C:/msys64/ucrt64/include;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'D:/Studia/Zaawansowana Grafika komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-dmnck8']
+        ignore line: [Change Dir: 'D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_a7648]
-        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_850ad/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_850ad.dir\\build.make CMakeFiles/cmTC_850ad.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt 3D/build/CMakeFiles/CMakeScratch/TryCompile-75278n']
+        ignore line: [Building CXX object CMakeFiles/cmTC_850ad.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --with-native-system-header-dir=/ucrt64/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a7648.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccdTIXQ3.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\ucrt64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_850ad.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccNxRfHU.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"]
-        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"]
-        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"]
-        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"]
-        ignore line: [ignoring nonexistent directory "D:/M/msys64/mingw64/include"]
-        ignore line: [ignoring nonexistent directory "/mingw64/include"]
-        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "D:/M/msys64/mingw64/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "D:/M/msys64/ucrt64/include"]
+        ignore line: [ignoring nonexistent directory "/ucrt64/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "D:/M/msys64/ucrt64/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccdTIXQ3.s]
+        ignore line: [Compiler executable checksum: 3a1a95c83f0136a64748ec8c5a2a87f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccNxRfHU.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
-        ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a7648.exe -Wl --out-implib libcmTC_a7648.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_850ad.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_850ad.exe]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_850ad.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --with-native-system-header-dir=/ucrt64/include --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a7648.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_a7648.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccvsMsk8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a7648.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a7648.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_850ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_850ad.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccNlCwHk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_850ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_850ad.dir/objects.a --no-whole-archive --out-implib libcmTC_850ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\msys64\\tmp\\ccvsMsk8.res] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\msys64\\tmp\\ccNlCwHk.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -1264,19 +1275,21 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_a7648.exe] ==> ignore
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc] ==> dir [C:/msys64/mingw64/bin/../lib/gcc]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
-          arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
+          arg [cmTC_850ad.exe] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_850ad.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_a7648.dll.a] ==> ignore
+          arg [libcmTC_850ad.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1299,44 +1312,44 @@ events:
           arg [-lmingwex] ==> lib [mingwex]
           arg [-lmsvcrt] ==> lib [msvcrt]
           arg [-lkernel32] ==> lib [kernel32]
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
-          arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccvsMsk8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_a7648.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_a7648.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_a7648.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
-        linker tool for 'CXX': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccNlCwHk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_850ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_850ad.dir/objects.a --no-whole-archive --out-implib libcmTC_850ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
-        collapse obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> [C:/msys64/mingw64/lib/crt2.o]
-        collapse obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
-        collapse obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> [C:/msys64/mingw64/lib/default-manifest.o]
-        collapse obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc] ==> [C:/msys64/mingw64/lib/gcc]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> [C:/msys64/mingw64/lib]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> [C:/msys64/mingw64/lib]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> [C:/msys64/ucrt64/lib/crt2.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> [C:/msys64/ucrt64/lib/default-manifest.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc] ==> [C:/msys64/ucrt64/lib/gcc]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> [C:/msys64/ucrt64/lib]
         implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
-        implicit objs: [C:/msys64/mingw64/lib/crt2.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o;C:/msys64/mingw64/lib/default-manifest.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
-        implicit dirs: [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0;C:/msys64/mingw64/lib/gcc;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/lib]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o;C:/msys64/ucrt64/lib/default-manifest.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0;C:/msys64/ucrt64/lib/gcc;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      Running the CXX compiler's linker: "C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      Running the CXX compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.45.1
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:302 (OSG_FIND_PATH)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:302 (OSG_FIND_PATH)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OSG_INCLUDE_DIR"
@@ -1352,8 +1365,8 @@ events:
     names:
       - "osg/Version"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -1372,10 +1385,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -1389,8 +1402,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/osg/Version"
-      - "C:/msys64/mingw64/bin/osg/Version"
+      - "C:/msys64/ucrt64/bin/include/osg/Version"
+      - "C:/msys64/ucrt64/bin/osg/Version"
       - "C:/msys64/usr/local/bin/include/osg/Version"
       - "C:/msys64/usr/local/bin/osg/Version"
       - "C:/msys64/usr/bin/include/osg/Version"
@@ -1409,11 +1422,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/osg/Version"
       - "C:/msys64/usr/bin/core_perl/include/osg/Version"
       - "C:/msys64/usr/bin/core_perl/osg/Version"
-      - "C:/msys64/mingw64/include/include/osg/Version"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/osg/Version"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1426,17 +1439,17 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg.cmake:124 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg.cmake:124 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSG_LIBRARY_RELEASE"
@@ -1452,8 +1465,8 @@ events:
     names:
       - "osg"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1472,10 +1485,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1493,8 +1506,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1513,11 +1526,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libosg.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libosg.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1530,21 +1543,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg.cmake:124 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg.cmake:124 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSG_LIBRARY_DEBUG"
@@ -1560,8 +1573,8 @@ events:
     names:
       - "osgd"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1580,10 +1593,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1601,8 +1614,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1621,10 +1634,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1644,7 +1657,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1657,21 +1670,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgDB.cmake:126 (OSG_FIND_PATH)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgDB.cmake:126 (OSG_FIND_PATH)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OSGDB_INCLUDE_DIR"
@@ -1687,8 +1700,8 @@ events:
     names:
       - "osgDB/DatabasePager"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -1707,10 +1720,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -1724,8 +1737,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/osgDB/DatabasePager"
-      - "C:/msys64/mingw64/bin/osgDB/DatabasePager"
+      - "C:/msys64/ucrt64/bin/include/osgDB/DatabasePager"
+      - "C:/msys64/ucrt64/bin/osgDB/DatabasePager"
       - "C:/msys64/usr/local/bin/include/osgDB/DatabasePager"
       - "C:/msys64/usr/local/bin/osgDB/DatabasePager"
       - "C:/msys64/usr/bin/include/osgDB/DatabasePager"
@@ -1744,11 +1757,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/osgDB/DatabasePager"
       - "C:/msys64/usr/bin/core_perl/include/osgDB/DatabasePager"
       - "C:/msys64/usr/bin/core_perl/osgDB/DatabasePager"
-      - "C:/msys64/mingw64/include/include/osgDB/DatabasePager"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/osgDB/DatabasePager"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1761,17 +1774,17 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgDB.cmake:127 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgDB.cmake:127 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGDB_LIBRARY_RELEASE"
@@ -1787,8 +1800,8 @@ events:
     names:
       - "osgDB"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1807,10 +1820,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1828,8 +1841,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1848,11 +1861,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libosgDB.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libosgDB.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1865,21 +1878,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgDB.cmake:127 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgDB.cmake:127 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGDB_LIBRARY_DEBUG"
@@ -1895,8 +1908,8 @@ events:
     names:
       - "osgDBd"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1915,10 +1928,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1936,8 +1949,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -1956,10 +1969,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -1979,7 +1992,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -1992,21 +2005,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgGA.cmake:128 (OSG_FIND_PATH)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgGA.cmake:128 (OSG_FIND_PATH)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OSGGA_INCLUDE_DIR"
@@ -2022,8 +2035,8 @@ events:
     names:
       - "osgGA/FlightManipulator"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -2042,10 +2055,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -2059,8 +2072,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/osgGA/FlightManipulator"
-      - "C:/msys64/mingw64/bin/osgGA/FlightManipulator"
+      - "C:/msys64/ucrt64/bin/include/osgGA/FlightManipulator"
+      - "C:/msys64/ucrt64/bin/osgGA/FlightManipulator"
       - "C:/msys64/usr/local/bin/include/osgGA/FlightManipulator"
       - "C:/msys64/usr/local/bin/osgGA/FlightManipulator"
       - "C:/msys64/usr/bin/include/osgGA/FlightManipulator"
@@ -2079,11 +2092,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/osgGA/FlightManipulator"
       - "C:/msys64/usr/bin/core_perl/include/osgGA/FlightManipulator"
       - "C:/msys64/usr/bin/core_perl/osgGA/FlightManipulator"
-      - "C:/msys64/mingw64/include/include/osgGA/FlightManipulator"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/osgGA/FlightManipulator"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2096,17 +2109,17 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgGA.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgGA.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGGA_LIBRARY_RELEASE"
@@ -2122,8 +2135,8 @@ events:
     names:
       - "osgGA"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2142,10 +2155,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2163,8 +2176,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2183,11 +2196,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libosgGA.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libosgGA.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2200,21 +2213,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgGA.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgGA.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGGA_LIBRARY_DEBUG"
@@ -2230,8 +2243,8 @@ events:
     names:
       - "osgGAd"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2250,10 +2263,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2271,8 +2284,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2291,10 +2304,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2314,7 +2327,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2327,21 +2340,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgViewer.cmake:128 (OSG_FIND_PATH)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgViewer.cmake:128 (OSG_FIND_PATH)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OSGVIEWER_INCLUDE_DIR"
@@ -2357,8 +2370,8 @@ events:
     names:
       - "osgViewer/Viewer"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -2377,10 +2390,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -2394,8 +2407,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/osgViewer/Viewer"
-      - "C:/msys64/mingw64/bin/osgViewer/Viewer"
+      - "C:/msys64/ucrt64/bin/include/osgViewer/Viewer"
+      - "C:/msys64/ucrt64/bin/osgViewer/Viewer"
       - "C:/msys64/usr/local/bin/include/osgViewer/Viewer"
       - "C:/msys64/usr/local/bin/osgViewer/Viewer"
       - "C:/msys64/usr/bin/include/osgViewer/Viewer"
@@ -2414,11 +2427,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/osgViewer/Viewer"
       - "C:/msys64/usr/bin/core_perl/include/osgViewer/Viewer"
       - "C:/msys64/usr/bin/core_perl/osgViewer/Viewer"
-      - "C:/msys64/mingw64/include/include/osgViewer/Viewer"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/osgViewer/Viewer"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2431,17 +2444,17 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgViewer.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgViewer.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGVIEWER_LIBRARY_RELEASE"
@@ -2457,8 +2470,8 @@ events:
     names:
       - "osgViewer"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2477,10 +2490,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2498,8 +2511,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2518,11 +2531,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libosgViewer.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libosgViewer.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2535,21 +2548,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgViewer.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgViewer.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGVIEWER_LIBRARY_DEBUG"
@@ -2565,8 +2578,8 @@ events:
     names:
       - "osgViewerd"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2585,10 +2598,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2606,8 +2619,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2626,10 +2639,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2649,7 +2662,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2662,21 +2675,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgUtil.cmake:128 (OSG_FIND_PATH)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:26 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgUtil.cmake:128 (OSG_FIND_PATH)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OSGUTIL_INCLUDE_DIR"
@@ -2692,8 +2705,8 @@ events:
     names:
       - "osgUtil/SceneView"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -2712,10 +2725,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -2729,8 +2742,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/osgUtil/SceneView"
-      - "C:/msys64/mingw64/bin/osgUtil/SceneView"
+      - "C:/msys64/ucrt64/bin/include/osgUtil/SceneView"
+      - "C:/msys64/ucrt64/bin/osgUtil/SceneView"
       - "C:/msys64/usr/local/bin/include/osgUtil/SceneView"
       - "C:/msys64/usr/local/bin/osgUtil/SceneView"
       - "C:/msys64/usr/bin/include/osgUtil/SceneView"
@@ -2749,11 +2762,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/osgUtil/SceneView"
       - "C:/msys64/usr/bin/core_perl/include/osgUtil/SceneView"
       - "C:/msys64/usr/bin/core_perl/osgUtil/SceneView"
-      - "C:/msys64/mingw64/include/include/osgUtil/SceneView"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/osgUtil/SceneView"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2766,17 +2779,17 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgUtil.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:45 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgUtil.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGUTIL_LIBRARY_RELEASE"
@@ -2792,8 +2805,8 @@ events:
     names:
       - "osgUtil"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2812,10 +2825,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2833,8 +2846,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2853,11 +2866,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libosgUtil.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libosgUtil.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2870,21 +2883,21 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindosgUtil.cmake:129 (OSG_FIND_LIBRARY)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/Findosg_functions.cmake:57 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindosgUtil.cmake:129 (OSG_FIND_LIBRARY)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OSGUTIL_LIBRARY_DEBUG"
@@ -2900,8 +2913,8 @@ events:
     names:
       - "osgUtild"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2920,10 +2933,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2941,8 +2954,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -2961,10 +2974,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -2984,7 +2997,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -2997,20 +3010,20 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenThreads.cmake:111 (find_path)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenThreads.cmake:111 (find_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "path"
     variable: "OPENTHREADS_INCLUDE_DIR"
@@ -3026,8 +3039,8 @@ events:
     names:
       - "OpenThreads/Thread"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/include/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/include/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/include/"
@@ -3046,10 +3059,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/include/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/include/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/include/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/"
       - "C:/Program Files/include/"
@@ -3063,8 +3076,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/include/"
       - "C:/Program Files (x86)/minigolf_osg/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/include/OpenThreads/Thread"
-      - "C:/msys64/mingw64/bin/OpenThreads/Thread"
+      - "C:/msys64/ucrt64/bin/include/OpenThreads/Thread"
+      - "C:/msys64/ucrt64/bin/OpenThreads/Thread"
       - "C:/msys64/usr/local/bin/include/OpenThreads/Thread"
       - "C:/msys64/usr/local/bin/OpenThreads/Thread"
       - "C:/msys64/usr/bin/include/OpenThreads/Thread"
@@ -3083,11 +3096,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/OpenThreads/Thread"
       - "C:/msys64/usr/bin/core_perl/include/OpenThreads/Thread"
       - "C:/msys64/usr/bin/core_perl/OpenThreads/Thread"
-      - "C:/msys64/mingw64/include/include/OpenThreads/Thread"
-    found: "C:/msys64/mingw64/include/"
+      - "C:/msys64/ucrt64/include/include/OpenThreads/Thread"
+    found: "C:/msys64/ucrt64/include/"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -3100,16 +3113,16 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenThreads.cmake:125 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenThreads.cmake:125 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OPENTHREADS_LIBRARY_RELEASE"
@@ -3126,8 +3139,8 @@ events:
       - "OpenThreads"
       - "OpenThreadsWin32"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -3146,10 +3159,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -3167,8 +3180,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -3187,11 +3200,11 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-    found: "C:/msys64/mingw64/lib/libOpenThreads.dll.a"
+      - "C:/msys64/ucrt64/lib/lib/"
+    found: "C:/msys64/ucrt64/lib/libOpenThreads.dll.a"
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -3204,20 +3217,20 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenThreads.cmake:140 (find_library)"
-      - "C:/msys64/mingw64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenThreads.cmake:140 (find_library)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/FindOpenSceneGraph.cmake:372 (find_package)"
       - "CMakeLists.txt:7 (find_package)"
     mode: "library"
     variable: "OPENTHREADS_LIBRARY_DEBUG"
@@ -3234,8 +3247,8 @@ events:
       - "OpenThreadsd"
       - "OpenThreadsWin32d"
     candidate_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -3254,10 +3267,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -3275,8 +3288,8 @@ events:
       - "/bin/lib/"
       - "/bin/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -3295,10 +3308,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -3315,8 +3328,8 @@ events:
       - "C:/Program Files (x86)/minigolf_osg/bin/"
       - "/bin/lib/"
       - "/bin/"
-      - "C:/msys64/mingw64/bin/lib/"
-      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/"
       - "C:/msys64/usr/local/bin/lib/"
       - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/lib/"
@@ -3335,10 +3348,10 @@ events:
       - "C:/msys64/usr/bin/vendor_perl/"
       - "C:/msys64/usr/bin/core_perl/lib/"
       - "C:/msys64/usr/bin/core_perl/"
-      - "C:/msys64/mingw64/lib/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/lib/"
-      - "C:/msys64/mingw64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -3358,7 +3371,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
         - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
         - "C:\\msys64\\usr\\bin"
@@ -3371,13 +3384,13 @@ events:
         - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/msys64/mingw64"
+        - "C:/msys64/ucrt64"
         - "C:/Program Files (x86)/minigolf_osg"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/minigolf_osg/bin"
-        - "C:/msys64/mingw64/bin"
+        - "C:/msys64/ucrt64/bin"
         - "/bin"
 ...
