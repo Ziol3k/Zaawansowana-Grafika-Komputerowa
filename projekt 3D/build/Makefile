@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\msys64\ucrt64\bin\cmake.exe
+CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\msys64\ucrt64\bin\cmake.exe -E rm -f
+RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D"
+CMAKE_SOURCE_DIR = "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build"
+CMAKE_BINARY_DIR = "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\CMakeFiles" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,150 @@ minigolf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/build
 .PHONY : minigolf/fast
 
+src/Game.obj: src/Game.cpp.obj
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
+src/Hud.obj: src/Hud.cpp.obj
+.PHONY : src/Hud.obj
+
+# target to build an object file
+src/Hud.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Hud.cpp.obj
+.PHONY : src/Hud.cpp.obj
+
+src/Hud.i: src/Hud.cpp.i
+.PHONY : src/Hud.i
+
+# target to preprocess a source file
+src/Hud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Hud.cpp.i
+.PHONY : src/Hud.cpp.i
+
+src/Hud.s: src/Hud.cpp.s
+.PHONY : src/Hud.s
+
+# target to generate assembly for a file
+src/Hud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Hud.cpp.s
+.PHONY : src/Hud.cpp.s
+
+src/Input.obj: src/Input.cpp.obj
+.PHONY : src/Input.obj
+
+# target to build an object file
+src/Input.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Input.cpp.obj
+.PHONY : src/Input.cpp.obj
+
+src/Input.i: src/Input.cpp.i
+.PHONY : src/Input.i
+
+# target to preprocess a source file
+src/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Input.cpp.i
+.PHONY : src/Input.cpp.i
+
+src/Input.s: src/Input.cpp.s
+.PHONY : src/Input.s
+
+# target to generate assembly for a file
+src/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Input.cpp.s
+.PHONY : src/Input.cpp.s
+
+src/Level.obj: src/Level.cpp.obj
+.PHONY : src/Level.obj
+
+# target to build an object file
+src/Level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Level.cpp.obj
+.PHONY : src/Level.cpp.obj
+
+src/Level.i: src/Level.cpp.i
+.PHONY : src/Level.i
+
+# target to preprocess a source file
+src/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Level.cpp.i
+.PHONY : src/Level.cpp.i
+
+src/Level.s: src/Level.cpp.s
+.PHONY : src/Level.s
+
+# target to generate assembly for a file
+src/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Level.cpp.s
+.PHONY : src/Level.cpp.s
+
+src/Physics.obj: src/Physics.cpp.obj
+.PHONY : src/Physics.obj
+
+# target to build an object file
+src/Physics.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Physics.cpp.obj
+.PHONY : src/Physics.cpp.obj
+
+src/Physics.i: src/Physics.cpp.i
+.PHONY : src/Physics.i
+
+# target to preprocess a source file
+src/Physics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Physics.cpp.i
+.PHONY : src/Physics.cpp.i
+
+src/Physics.s: src/Physics.cpp.s
+.PHONY : src/Physics.s
+
+# target to generate assembly for a file
+src/Physics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/Physics.cpp.s
+.PHONY : src/Physics.cpp.s
+
+src/SceneBuilder.obj: src/SceneBuilder.cpp.obj
+.PHONY : src/SceneBuilder.obj
+
+# target to build an object file
+src/SceneBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj
+.PHONY : src/SceneBuilder.cpp.obj
+
+src/SceneBuilder.i: src/SceneBuilder.cpp.i
+.PHONY : src/SceneBuilder.i
+
+# target to preprocess a source file
+src/SceneBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.i
+.PHONY : src/SceneBuilder.cpp.i
+
+src/SceneBuilder.s: src/SceneBuilder.cpp.s
+.PHONY : src/SceneBuilder.s
+
+# target to generate assembly for a file
+src/SceneBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\minigolf.dir\build.make CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.s
+.PHONY : src/SceneBuilder.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -161,6 +305,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... minigolf
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
+	@echo ... src/Hud.obj
+	@echo ... src/Hud.i
+	@echo ... src/Hud.s
+	@echo ... src/Input.obj
+	@echo ... src/Input.i
+	@echo ... src/Input.s
+	@echo ... src/Level.obj
+	@echo ... src/Level.i
+	@echo ... src/Level.s
+	@echo ... src/Physics.obj
+	@echo ... src/Physics.i
+	@echo ... src/Physics.s
+	@echo ... src/SceneBuilder.obj
+	@echo ... src/SceneBuilder.i
+	@echo ... src/SceneBuilder.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

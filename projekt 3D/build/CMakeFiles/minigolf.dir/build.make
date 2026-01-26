@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\msys64\ucrt64\bin\cmake.exe
+CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\msys64\ucrt64\bin\cmake.exe -E rm -f
+RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D"
+CMAKE_SOURCE_DIR = "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build"
+CMAKE_BINARY_DIR = "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/minigolf.dir/depend.make
@@ -72,38 +72,142 @@ CMakeFiles/minigolf.dir/codegen:
 .PHONY : CMakeFiles/minigolf.dir/codegen
 
 CMakeFiles/minigolf.dir/src/main.cpp.obj: CMakeFiles/minigolf.dir/flags.make
-CMakeFiles/minigolf.dir/src/main.cpp.obj: D:/Studia/Zaawansowana-Grafika-Komputerowa/projekt\ 3D/src/main.cpp
+CMakeFiles/minigolf.dir/src/main.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/main.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/main.cpp
 CMakeFiles/minigolf.dir/src/main.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minigolf.dir/src/main.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/main.cpp.obj -MF CMakeFiles\minigolf.dir\src\main.cpp.obj.d -o CMakeFiles\minigolf.dir\src\main.cpp.obj -c "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/minigolf.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/main.cpp.obj -MF CMakeFiles\minigolf.dir\src\main.cpp.obj.d -o CMakeFiles\minigolf.dir\src\main.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\main.cpp"
 
 CMakeFiles/minigolf.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/main.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\src\main.cpp" > CMakeFiles\minigolf.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\main.cpp" > CMakeFiles\minigolf.dir\src\main.cpp.i
 
 CMakeFiles/minigolf.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/main.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\src\main.cpp" -o CMakeFiles\minigolf.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\main.cpp" -o CMakeFiles\minigolf.dir\src\main.cpp.s
+
+CMakeFiles/minigolf.dir/src/Game.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/Game.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/Game.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/Game.cpp
+CMakeFiles/minigolf.dir/src/Game.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/minigolf.dir/src/Game.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/Game.cpp.obj -MF CMakeFiles\minigolf.dir\src\Game.cpp.obj.d -o CMakeFiles\minigolf.dir\src\Game.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Game.cpp"
+
+CMakeFiles/minigolf.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/Game.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Game.cpp" > CMakeFiles\minigolf.dir\src\Game.cpp.i
+
+CMakeFiles/minigolf.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/Game.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Game.cpp" -o CMakeFiles\minigolf.dir\src\Game.cpp.s
+
+CMakeFiles/minigolf.dir/src/Level.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/Level.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/Level.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/Level.cpp
+CMakeFiles/minigolf.dir/src/Level.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/minigolf.dir/src/Level.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/Level.cpp.obj -MF CMakeFiles\minigolf.dir\src\Level.cpp.obj.d -o CMakeFiles\minigolf.dir\src\Level.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Level.cpp"
+
+CMakeFiles/minigolf.dir/src/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/Level.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Level.cpp" > CMakeFiles\minigolf.dir\src\Level.cpp.i
+
+CMakeFiles/minigolf.dir/src/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/Level.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Level.cpp" -o CMakeFiles\minigolf.dir\src\Level.cpp.s
+
+CMakeFiles/minigolf.dir/src/Physics.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/Physics.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/Physics.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/Physics.cpp
+CMakeFiles/minigolf.dir/src/Physics.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/minigolf.dir/src/Physics.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/Physics.cpp.obj -MF CMakeFiles\minigolf.dir\src\Physics.cpp.obj.d -o CMakeFiles\minigolf.dir\src\Physics.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Physics.cpp"
+
+CMakeFiles/minigolf.dir/src/Physics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/Physics.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Physics.cpp" > CMakeFiles\minigolf.dir\src\Physics.cpp.i
+
+CMakeFiles/minigolf.dir/src/Physics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/Physics.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Physics.cpp" -o CMakeFiles\minigolf.dir\src\Physics.cpp.s
+
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/SceneBuilder.cpp
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj -MF CMakeFiles\minigolf.dir\src\SceneBuilder.cpp.obj.d -o CMakeFiles\minigolf.dir\src\SceneBuilder.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\SceneBuilder.cpp"
+
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\SceneBuilder.cpp" > CMakeFiles\minigolf.dir\src\SceneBuilder.cpp.i
+
+CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\SceneBuilder.cpp" -o CMakeFiles\minigolf.dir\src\SceneBuilder.cpp.s
+
+CMakeFiles/minigolf.dir/src/Hud.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/Hud.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/Hud.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/Hud.cpp
+CMakeFiles/minigolf.dir/src/Hud.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/minigolf.dir/src/Hud.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/Hud.cpp.obj -MF CMakeFiles\minigolf.dir\src\Hud.cpp.obj.d -o CMakeFiles\minigolf.dir\src\Hud.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Hud.cpp"
+
+CMakeFiles/minigolf.dir/src/Hud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/Hud.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Hud.cpp" > CMakeFiles\minigolf.dir\src\Hud.cpp.i
+
+CMakeFiles/minigolf.dir/src/Hud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/Hud.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Hud.cpp" -o CMakeFiles\minigolf.dir\src\Hud.cpp.s
+
+CMakeFiles/minigolf.dir/src/Input.cpp.obj: CMakeFiles/minigolf.dir/flags.make
+CMakeFiles/minigolf.dir/src/Input.cpp.obj: CMakeFiles/minigolf.dir/includes_CXX.rsp
+CMakeFiles/minigolf.dir/src/Input.cpp.obj: D:/Studia/Zaawansowana\ Grafika\ komputerowa/projekt\ 3D/src/Input.cpp
+CMakeFiles/minigolf.dir/src/Input.cpp.obj: CMakeFiles/minigolf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/minigolf.dir/src/Input.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/minigolf.dir/src/Input.cpp.obj -MF CMakeFiles\minigolf.dir\src\Input.cpp.obj.d -o CMakeFiles\minigolf.dir\src\Input.cpp.obj -c "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Input.cpp"
+
+CMakeFiles/minigolf.dir/src/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minigolf.dir/src/Input.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Input.cpp" > CMakeFiles\minigolf.dir\src\Input.cpp.i
+
+CMakeFiles/minigolf.dir/src/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minigolf.dir/src/Input.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\src\Input.cpp" -o CMakeFiles\minigolf.dir\src\Input.cpp.s
 
 # Object files for target minigolf
 minigolf_OBJECTS = \
-"CMakeFiles/minigolf.dir/src/main.cpp.obj"
+"CMakeFiles/minigolf.dir/src/main.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/Game.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/Level.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/Physics.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/Hud.cpp.obj" \
+"CMakeFiles/minigolf.dir/src/Input.cpp.obj"
 
 # External object files for target minigolf
 minigolf_EXTERNAL_OBJECTS =
 
 minigolf.exe: CMakeFiles/minigolf.dir/src/main.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/Game.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/Level.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/Physics.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/SceneBuilder.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/Hud.cpp.obj
+minigolf.exe: CMakeFiles/minigolf.dir/src/Input.cpp.obj
 minigolf.exe: CMakeFiles/minigolf.dir/build.make
-minigolf.exe: C:/msys64/ucrt64/lib/libosg.dll.a
-minigolf.exe: C:/msys64/ucrt64/lib/libosgDB.dll.a
-minigolf.exe: C:/msys64/ucrt64/lib/libosgGA.dll.a
-minigolf.exe: C:/msys64/ucrt64/lib/libosgViewer.dll.a
-minigolf.exe: C:/msys64/ucrt64/lib/libosgUtil.dll.a
-minigolf.exe: C:/msys64/ucrt64/lib/libOpenThreads.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosgDB.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosgUtil.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosgGA.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosgViewer.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosgText.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libosg.dll.a
+minigolf.exe: C:/msys64/mingw64/lib/libOpenThreads.dll.a
 minigolf.exe: CMakeFiles/minigolf.dir/linkLibs.rsp
 minigolf.exe: CMakeFiles/minigolf.dir/objects1.rsp
 minigolf.exe: CMakeFiles/minigolf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable minigolf.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable minigolf.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\minigolf.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +219,6 @@ CMakeFiles/minigolf.dir/clean:
 .PHONY : CMakeFiles/minigolf.dir/clean
 
 CMakeFiles/minigolf.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build" "D:\Studia\Zaawansowana-Grafika-Komputerowa\projekt 3D\build\CMakeFiles\minigolf.dir\DependInfo.cmake" "--color=$(COLOR)" minigolf
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build" "D:\Studia\Zaawansowana Grafika komputerowa\projekt 3D\build\CMakeFiles\minigolf.dir\DependInfo.cmake" "--color=$(COLOR)" minigolf
 .PHONY : CMakeFiles/minigolf.dir/depend
 
