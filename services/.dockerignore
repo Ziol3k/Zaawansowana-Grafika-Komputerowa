@@ -1,0 +1,9 @@
+.git
+**/build
+**/.venv
+**/node_modules
+**/__pycache__
+*.exe
+*.obj
+*.pdb
+*.zip
